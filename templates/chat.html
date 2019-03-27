@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130412723-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-130412723-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="CXQW8PiRNmOqdhkyw1y9bEpjHA9EpgXZqxgQMvwc">
+    <title>FalconDB ファルコン求人解析　〜企業戦略をAI解析で行う、企業分析BIツール</title>
+    <meta name="description" content="アルサーガパートナーズ株式会社が運営する、AI企業分析サイト。" />
+    <meta name="keywords" content="falcon,FalconDB,AI,求人解析,アルサーガパートナーズ,企業分析,BIツール" />
+    <meta property="og:title" content="FalconDB - 求人解析" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://falcon-db.com" />
+    <meta property="og:image" content="https://d2ch8va8zngxua.cloudfront.net/public/img/top/falconLogow_original.png" />
+    <meta property="og:description" content="アルサーガパートナーズ株式会社が運営する、AI企業分析サイト。" />
+    <meta property="fb:app_id" content="" />
+    <link rel="icon" type="image/png" href="https://d2ch8va8zngxua.cloudfront.net/public/img/corp_logo/favicon.ico" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://d2ch8va8zngxua.cloudfront.net/public/img/corp_logo/favicon.ico" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://d2ch8va8zngxua.cloudfront.net/public/img/corp_logo/favicon.ico" sizes="144x144">
+    <link rel="apple-touch-icon" href="https://falcon-db.com/" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link media="all" type="text/css" rel="stylesheet" href="https://d2ch8va8zngxua.cloudfront.net/public/build/css/landing/main-9685e0c91f.css">
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-101187875-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+<body>
+<header class="sticky-top header_position">
+    <div>
+        <img src="https://d2ch8va8zngxua.cloudfront.net/public/img/top/falconLogow_original.png" alt="">
+        <p>求人解析</p>
+    </div>
+    <div>
+        <a href="/login" class="btn btn_purple no_hover_white">ログイン</a>
+        <a href="/contact" class="btn no_hover_gray">新規登録</a>
+    </div>
+    <div class="cp_fullscreenmenu">
+        <input type="checkbox" id="menuToggle" />
+        <label for="menuToggle" class="hamburger">
+            <div class="open"></div>
+        </label>
+        <div class="menu menuEffects">
+            <label for="menuToggle"></label>
+            <div class="menucont">
+                <ul>
+                    <li><a href="/login" class="sp_login_btn no_hover_white">ログイン</a></li>
+                    <li><a href="/contact" class="sp_sign_btn no_hover_gray">新規登録</a></li>
+                    <li><a href="/">トップ</a></li>
+                    <li><a href="/terms">利用規約</a></li>
+                    <li><a href="privacy_policy">プライバシーポリシー</a></li>
+                    <li><a href="/commercial">特定商取引法に基づく表記</a></li>
+                    <li><a href="/contact">お問い合わせ</a></li>
+                    <li><a href="https://www.arsaga.jp/">運営会社</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="top">
+    <div class="top_main_visual">
+        <div>
+            <img src="https://d2ch8va8zngxua.cloudfront.net/public/img/top/logo_lptop.png" alt="">
+            <p>求人解析</p>
+        </div>
+        <span>成果報酬一切なし。</span>
+        <p>企業戦略をAI解析で行う、<span class="sp_br">企業分析BIツール</span></p>
+        <div>
+            <a href="/login" class="btn btn_lg no_hover_white">ログイン</a>
+            <div class="button_wrap">
+                <a href="/contact" class="btn btn_lg no_hover_white">新規登録</a>
+            </div>
+        </div>
+        <div>
+            <img src="https://d2ch8va8zngxua.cloudfront.net/public/img/top/scroll.png" alt="スクロール">
+        </div>
+    </div>
+    <div class="top_main_text">
+        <div>What’s 「Falcon」?</div>
+        <div>求人解析ツール「Falcon」の<span class="sp_br">コンセプト</span></div>
+        <div>
+            <p>人材は大手紹介サイトから検索して捜索するケースが多い現状があり、<br>同時に人材を求めている会社もたくさんあります。</p>
+            <p>しかし、どんどん積極採用している場合や、<br>実は良い人がいたら採用というくらいの感覚だったりと、<span>企業により人材を求める温度感は違います。</span></p>
+            <p>実際、<span>スキルシートを送って面接までこぎつけても採用されない</span>という状況が発生すると、<br><span>そこまでかけた稼働が無駄</span>になってしまう。<br>さらに人材を集める媒体はみな大手紹介サイトを使っているので、<span>早い者勝ち</span>になる。</p>
+            <p>つまり<span>最初に紹介し、面接まで持っていく会社を選ぶのが非常に重要なポイント</span>になってきます。</p>
+            <p class="font_large">そこを解決するのがFalconです。</p>
+            <p><span>Falconを使えばたった今一番積極採用している企業がわかる</span>ため、<br><span>契約成立にいたる可能性が高い企業などの常に最適な企業を提案</span>できます。<br>成功確率を上げるだけでなく、<span>効率化による契約までの時間短縮と契約単価の向上</span>も見込めます。</p>
+            <p class="font_large">ライバル人材会社より早く質のいい契約を勝ち取るには<br>Falconが示す企業にまずアプローチする事をオススメします。</p>
+            <p>それにより、ライバル企業よりも先に契約成立させる事に成功できるでしょう！</p>
+        </div>
+    </div>
+    <section>
+        <div class="container">
+            <h1>AIデータベース「Falcon」が企業を導きます</h1>
+            <p>「Falcon」の機能紹介。企業をAIで導くBIツール。</p>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner img_pc_position">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://d2ch8va8zngxua.cloudfront.net/public/img/top/slide1.png" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://d2ch8va8zngxua.cloudfront.net/public/img/top/slide2.png" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://d2ch8va8zngxua.cloudfront.net/public/img/top/slide3.png" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <div class="top_main_point_text">
+        <div>「Falcon」の3つのPoint</div>
+        <div>各企業のアクティビティを解析し、<br>その解析データをtoB（ビジネス）向けに提供します。</div>
+    </div>
+    <section class="top_main_point1">
+        <div><span class="point">Point1</span></div>
+        <div class="point_title">一番成約率が高い企業を<span class="sp_br2">リアルタイムに表示</span></div>
+        <div>
+            <img class="pc_show pc_point_img" src="https://d2ch8va8zngxua.cloudfront.net/public/img/top/Point1.png">
+            <img class="sp_show width_100" src="https://d2ch8va8zngxua.cloudfront.net/public/img/top/Point1_SP.png">
+        </div>
+    </section>
+    <div class="sp_point_text">
+        <p>独自の解析により集計を行い、ランキングとして表示しています。その営業を元に営業を行っていただく事で成約率が向上します。</p>
+    </div>
+    <section class="top_main_point2">
+        <div><span class="point">Point2</span></div>
+        <div class="point_title">担当者の情報などの独自のデータを<br>社内で企業ごとに共有</div>
+        <div>
+            <img class="pc_show pc_point_img" src="https://d2ch8va8zngxua.cloudfront.net/public/img/top/Point2.png">
+            <img class="sp_show width_100" src="https://d2ch8va8zngxua.cloudfront.net/public/img/top/Point2_SP.png">
+        </div>
+    </section>
+    <div class="sp_point_text">
+        <p>個々で企業ごとにリマインドしたい内容はメモ機能で保存。必要な情報は社内全体で共有することもできます。社内で独自のデータを共有して、企業へのアプローチを円滑に進めましょう。</p>
+    </div>
+    <section class="top_main_point3">
+        <div><span class="point">Point3</span></div>
+        <div class="point_title">IT業界を中心に各業界を豊富に紹介</div>
+        <div>弊社が得意とするIT関連の求人情報を中心とした、<br>多くの転職系の求人情報を取得しています。</div>
+        <div>
+            <img class="pc_show pc_point_img" src="https://d2ch8va8zngxua.cloudfront.net/public/img/top/Point3.png">
+            <img class="sp_show width_100" src="https://d2ch8va8zngxua.cloudfront.net/public/img/top/Point3_SP.png">
+        </div>
+    </section>
+    <div class="price_plan_band">
+        <h1>料金プランのご案内</h1>
+        <p>「FalconDB求人解析」の料金プラン。<span class="sp_br2">お手頃な価格で企業をサポートします。</span></p>
+        <p> 成果報酬一切なし！ </p>
+    </div>
+    <section class="plan">
+        <div class="img_box pc_show">
+            <img src="https://d2ch8va8zngxua.cloudfront.net/public/img/top/gyoukai1.png">
+            <img src="https://d2ch8va8zngxua.cloudfront.net/public/img/top/gyoukai2.png">
+        </div>
+        <div class="sp_show">
+            <img class="width_100" src="https://d2ch8va8zngxua.cloudfront.net/public/img/top/gyoukai1_SP.png">
+            <div class="margin_t_24"><img class="width_100" src="https://d2ch8va8zngxua.cloudfront.net/public/img/top/gyoukai2_SP.png"></div>
+        </div>
+        <p>※業界一つにつき上記の価格です。業界を2つ以上追加する場合、別途追加で上記料金が発生します。</p>
+        <img class="w-100 mb-50 pc_show" src="https://d2ch8va8zngxua.cloudfront.net/public/img/top/ryoukin.png">
+        <img class="w-100 mb-50 sp_show width_100" src="https://d2ch8va8zngxua.cloudfront.net/public/img/top/ryoukin2_SP.png">
+        <img class="w-100 mb-50 sp_show width_100" src="https://d2ch8va8zngxua.cloudfront.net/public/img/top/ryoukin_SP.png">
+        <div class="button_wrap">
+            <a href="/contact" class="btn btn_lg btn_purple no_hover_white">新規登録はこちらから</a>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="campaign_tag">
+        <p class="campaign_text_first">長期契約キャンペーン<span class="sp_br2">開催中！</span></p>
+        <div class="campaign_box">
+            <div class="half_year">
+                <p>半年契約<span>(先払い)</span></p>
+                <p>15%OFF</p>
+            </div>
+            <div class="one_year">
+                <p>一年契約<span>(先払い)</span></p>
+                <p>25%OFF</p>
+            </div>
+        </div>
+        <p class="campaign_text_second">キャンペーン契約に関してはメールにて<a href="/contact" class="campaign_contact">お問い合わせ</a>ください。</p>
+    </div>
+    <div class="footer-attention">
+        <ul class="footer-menu">
+            <li class="footer-menu-item white-space"><a href="/">トップ</a></li>
+            <li class="footer-menu-item white-space"><a href="/terms">利用規約</a></li>
+            <li class="footer-menu-item white-space"><a href="/privacy_policy">プライバシーポリシー</a></li>
+            <li class="footer-menu-item white-space"><a href="/commercial">特定商取引法に基づく表記</a></li>
+            <li class="footer-menu-item white-space"><a href="/contact">お問い合わせ</a></li>
+            <li class="footer-menu-item white-space"><a href="https://www.arsaga.jp/">運営会社</a></li>
+        </ul>
+    </div>
+    <small class="copyright">Copyright©2018&nbsp;Arsaga Partners</small>
+</footer>
+</body>
+</html>
