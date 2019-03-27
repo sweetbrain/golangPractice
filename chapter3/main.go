@@ -34,4 +34,46 @@ func main() {
 	name := "Taro" + " " + "¥amada"
 	fmt.Printf("%v\n", name)
 
+	fmt.Print(plus(1, 0))
+
+	fmt.Print(div(20, 3))
+
+	f := returnFunc()
+	f()
+
+	l := later()
+
+	fmt.Println(l("Golang"))
+	fmt.Println(l("is"))
+	fmt.Println(l("awesome!"))
+
+
+
+}
+
+func plus(x, y int) int {
+	return x + y
+}
+
+func div(a, b int) (int ,int) {
+	q := a / b
+	r := a % b
+
+	return q,r
+}
+
+func returnFunc() func() {
+	return func() {
+		fmt.Println("I'm a function")
+	}
+}
+
+func later() func(string) string {
+	var store string
+
+	return func(next string) string {
+		s := store
+		store = next
+		return s
+	}
 }
