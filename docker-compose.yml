@@ -48,7 +48,7 @@ services:
     volumes:
       - .:/go/src/app
     # docker-compose run実行時に実行される
-    command: go run main.go
+    command: sh ./start_app.sh
 # トップレベルでvolumesを定義すると、各サービスからボリュームを参照できる
 volumes:
   db-data:
