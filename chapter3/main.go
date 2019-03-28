@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"runtime"
+)
 
 func main() {
 	a := [3]string{
@@ -47,6 +50,28 @@ func main() {
 	fmt.Println(l("is"))
 	fmt.Println(l("awesome!"))
 
+	xx, yy := 2, 5
+	if n := xx * yy; n%2 == 0 {
+		fmt.Printf("n(%d) is even\n", n)
+	} else {
+		fmt.Printf("n(%d) is odd\n", n)
+	}
+
+	fruits := [3]string{"Apple", "Banana", "Cherry"}
+	for i, s := range fruits {
+		fmt.Printf("fruits[%d]=%s\n", i, s)
+	}
+
+	go fmt.Println("Yeah!")
+	fmt.Printf("NumCPU: %d\n", runtime.NumCPU())
+	fmt.Printf("Num Goroutine: %d\n", runtime.NumGoroutine())
+	fmt.Printf("Version: %s\n", runtime.Version())
+
+	ss := make([]int, 10)
+	fmt.Println(ss)
+
+	var aa [10]int
+	fmt.Println(aa)
 
 
 }
@@ -77,3 +102,9 @@ func later() func(string) string {
 		return s
 	}
 }
+
+func init() {
+	fmt.Println("init()")
+}
+
+
